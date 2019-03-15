@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        javascript form validations
+    </title>
+    <script>
+        function val()
+        {
+            var pass = /^[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+            
+            var x;
+            var text;
+          
+          
+            x=document.getElementById("pass").value;
+
+            if(x.match(pass))
+            {
+                text="input is valid";
+            }
+            else
+            {
+                    text="input is invalid";
+            }
+            document.getElementById("result").innerHTML = text;    
+        }
+        
+   
+
+    
+      
+       </script>
+</head>
+<body>
+    <input type="password" id="pass" placeholder="Password">
+   
+    
+    <button type="button" onclick="val()">submit</button>
+    <p id="result"></p>
+    
+</body>
+</html>

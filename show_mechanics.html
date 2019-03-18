@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>show mechanics on basis of ratings</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       
+        <script>
+               function hide(){
+                document.getElementById("demo").style.visibility = "hidden"; 
+               }
+               function show(){
+                document.getElementById("demo").style.visibility = "visible"; 
+               }
+        </script>
+        <style>
+                table, tr, td {
+                  border: 1px solid black;
+                  border-collapse: collapse;
+                  width: 50%;
+                  height: 50px;
+                  text-align: center;
+                  padding: 15px;
+                }
+                table{
+                    background-color: grey;
+                }
+                td{
+                   
+                    color: black;
+                   
+                   
+                }
+                tr{
+                    background-color: grey;
+                }
+               
+        </style>
+    </head>
+    <body>
+        <center><h1>click show to check the ratings</h1></center>
+           <center> <p><button id="hideTable" onclick="hide()">Hide Table</button>
+                <button id="showTable" onclick="show()">Show Table</button>
+             </p>
+       
+               
+                      <br/><table id="demo" class="table-striped ">
+                                    <tr>
+                                       <th>Mechanic name</th>
+                                       <th>Mechanic ratings</th>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td></td>
+                                    </tr>
+                            </table>
+                        </center>
+                      
+             
+                
+    </body>
+</html>
